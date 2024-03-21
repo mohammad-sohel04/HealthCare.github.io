@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kamran Mubarik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>HEALTH_CARE</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- FancyBox -->
+    <link
+      rel="stylesheet"
+      href="fancybox/source/jquery.fancybox.css"
+      type="text/css"
+      media="screen"
+    />
+    <script
+      type="text/javascript"
+      src="fancybox/source/jquery.fancybox.pack.js"
+    ></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link
+      rel="stylesheet"
+      href="fancybox/source/helpers/jquery.fancybox-buttons.css"
+      type="text/css"
+      media="screen"
+    />
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-buttons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-media.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="fancybox/source/helpers/jquery.fancybox-thumbs.css"
+      type="text/css"
+      media="screen"
+    />
+    <script
+      type="text/javascript"
+      src="fancybox/source/helpers/jquery.fancybox-thumbs.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".fancybox").fancybox({
+          openEffect: "none",
+          closeEffect: "none",
+
+          prevEffect: "none",
+          nextEffect: "none",
+
+          closeBtn: false,
+
+          helpers: {
+            title: {
+              type: "inside",
+            },
+            buttons: {},
+          },
+
+          afterLoad: function () {
+            this.title =
+              "Image " +
+              (this.index + 1) +
+              " of " +
+              this.group.length +
+              (this.title ? " - " + this.title : "");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/icons/online_shopping.png" />
+              <div class="logo-text">
+                <p class="big-logo">Health_Care</p>
+                <p class="small-logo">online shop</p>
+              </div>
+            </a>
+          </div>
+          <!-- logo -->
+          <div class="shop-icon">
+            <div class="dropdown">
+              <img src="img/icons/account.png" />
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="account.html">My Account</a></li>
+                  <li><a href="orders.html">My Orders</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown">
+              <img src="img/icons/heart.png" />
+              <div class="dropdown-menu wishlist-item">
+                <table border="1">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Product Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="img/product/img_1.jpg" /></td>
+                      <td>product name</td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/product/img_2.jpg" /></td>
+                      <td>product name</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="dropdown">
+              <img src="img/icons/shopping_cart.png" />
+              <div class="dropdown-menu cart-item">
+                <table border="1">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Product Name</th>
+                      <th class="center">Price</th>
+                      <th class="center">Qty.</th>
+                      <th class="center">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="img/product/img_1.jpg" /></td>
+                      <td>product name</td>
+                      <td class="center">1200</td>
+                      <td class="center">2</td>
+                      <td class="center">2400</td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/product/img_2.jpg" /></td>
+                      <td>product name</td>
+                      <td class="center">1500</td>
+                      <td class="center">2</td>
+                      <td class="center">3000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- shop icons -->
+        </div>
+        <!-- brand -->
+
+        <div class="menu-bar">
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search-bar">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="search"
+                  placeholder="Search"
+                />
+                <img src="img/icons/search.png" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- menu -->
+      </div>
+      <!-- container -->
+    </header>
+    <!-- header -->
+
+    <div class="container">
+      <main>
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>/</li>
+            <li><a href="">Shop</a></li>
+            <li>/</li>
+            <li><a href="">Product</a></li>
+          </ul>
+        </div>
+        <!-- End of Breadcrumb-->
+
+        <div class="single-product">
+          <div class="images-section">
+            <div class="larg-img">
+              <img src="img/product/img_1.jpg" />
+            </div>
+            <div class="small-img">
+              <a class="fancybox" rel="group" href="img/product/img_2.jpg">
+                <img src="img/product/img_2.jpg" />
+              </a>
+              <a class="fancybox" rel="group" href="img/product/img_3.jpg">
+                <img src="img/product/img_3.jpg" />
+              </a>
+              <a class="fancybox" rel="group" href="img/product/img_4.jpg">
+                <img src="img/product/img_4.jpg" />
+              </a>
+              <a class="fancybox" rel="group" href="img/product/img_5.jpg">
+                <img src="img/product/img_5.jpg" />
+              </a>
+            </div>
+          </div>
+          <!-- End of Images Section-->
+
+          <div class="product-detail">
+            <div class="product-name">
+              <h2>Paracetamol</h2>
+            </div>
+            <div class="product-price">
+              <h3>Rs.350/-</h3>
+            </div>
+            <hr />
+            <div class="product-description">
+              <p>
+                it is commonly used to treat mild to moderate pain, such as
+                headache, toothache, menstrual cramps, and muscle aches. It is
+                also commonly used to reduce fever.
+              </p>
+            </div>
+            <hr />
+            <div class="product-cart">
+              <form id="cart-form">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="cart-number"
+                    name="cartNumber"
+                    value="1"
+                    min="1"
+                    max="10"
+                  />
+                  <input type="submit" name="addToCart" value="Add To Cart" />
+                </div>
+              </form>
+              <form id="wishlist-form">
+                <div class="form-group">
+                  <input type="checkbox" class="wishlist" name="wishlist" /> Add
+                  To Wishlist
+                </div>
+              </form>
+            </div>
+            <hr />
+            <div class="product-meta">
+              <p><b>Category: </b> Product</p>
+              <p><b>Share This Product: </b> Facebook, Twitter</p>
+            </div>
+          </div>
+          <!-- End of Product Detail-->
+        </div>
+        <hr />
+        <div class="product-long-description">
+          <h3>Product Description</h3>
+          <p>
+            Paracetamol is a common pain reliever and fever reducer that is
+            available in tablet form, such as Paracip-500. Each Paracip-500
+            tablet contains 500mg of paracetamol, the active ingredient that
+            works by blocking the production of certain chemicals in the body
+            that cause pain and inflammation.
+            <br />
+            <br />
+            Paracip-500 tablets are used to relieve mild to moderate pain, such
+            as headache, toothache, menstrual cramps, and muscle aches. They can
+            also be used to reduce fever associated with various illnesses.
+            Paracip-500 is suitable for adults and children over the age of 12
+            years, and should be used only as directed on the label or by a
+            healthcare professional.
+            <br />
+            <br />
+            The tablets are small, round, and white in color, and are packaged
+            in a blister pack for easy dispensing. The blister pack is sealed to
+            ensure product safety and freshness. Paracip-500 tablets are
+            available over-the-counter in many countries and can be purchased
+            from pharmacies or online retailers.
+            <br />
+            <br />
+            As with all medications, there are some possible side effects
+            associated with the use of Paracip-500, such as mild stomach upset
+            or nausea. In rare cases, an allergic reaction may occur, which can
+            cause symptoms such as hives, difficulty breathing, or swelling of
+            the face, lips, tongue, or throat. It is important to follow the
+            recommended dose and not exceed the maximum daily dose to avoid any
+            potential side effects or complications. If you have any concerns
+            about using Paracip-500 or any other medication, you should consult
+            with a healthcare professional.
+          </p>
+        </div>
+        <hr />
+        <div class="new-product-section">
+          <div class="product-section-heading">
+            <h2>Recommend Products <img src="img/icons/good_quality.png" /></h2>
+            <h3>OUR BEST PRODUCTS RECOMMENDED FOR YOU</h3>
+          </div>
+          <div class="product-content">
+            <div class="product">
+              <a href="product.html">
+                <img src="img/product/img-1.jpg" />
+              </a>
+              <div class="product-detail">
+                <h3>Men's / Watches</h3>
+                <h2>Gray Color Men's Watch</h2>
+                <a href="#">Add to Cart</a>
+                <p>Rs.4500/-</p>
+              </div>
+            </div>
+            <div class="product">
+              <a href="product.html">
+                <img src="img/product/img-2.jpg" />
+              </a>
+              <div class="product-detail">
+                <h3>Men's / Pants</h3>
+                <h2>Levi's Jeans Pant</h2>
+                <a href="#">Add to Cart</a>
+                <p>Rs.2000/-</p>
+              </div>
+            </div>
+            <div class="product">
+              <a href="product.html">
+                <img src="img/product/img-3.jpg" />
+              </a>
+              <div class="product-detail">
+                <h3>Men's / Watches</h3>
+                <h2>Black Men's Watch</h2>
+                <a href="#">Add to Cart</a>
+                <p>Rs.4000/-</p>
+              </div>
+            </div>
+            <div class="product">
+              <a href="product.html">
+                <img src="img/product/img-4.jpg" />
+              </a>
+              <div class="product-detail">
+                <h3>Men's / Shoes</h3>
+                <h2>Nick Black Sneakers</h2>
+                <a href="#">Add to Cart</a>
+                <p>Rs.3200/-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Recommend Product Section -->
+      </main>
+      <!-- Main Area -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-widget">
+          <div class="widget">
+            <div class="widget-heading">
+              <h3>Important Link</h3>
+            </div>
+            <div class="widget-content">
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="refund.html">Refund Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-heading">
+              <h3>Information</h3>
+            </div>
+            <div class="widget-content">
+              <ul>
+                <li><a href="account.html">My Account</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="widget">
+            <div class="widget-heading">
+              <h3>Follow us</h3>
+            </div>
+            <div class="widget-content">
+              <div class="follow">
+                <ul>
+                  <li>
+                    <a href="#"><img src="img/icons/facebook.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icons/twitter.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/icons/instagram.png" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget-heading">
+              <h3>Subscribe for Newsletter</h3>
+            </div>
+            <div class="widget-content">
+              <div class="subscribe">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subscribe"
+                      placeholder="Email"
+                    />
+                    <img src="img/icons/paper_plane.png" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Widget -->
+        <div class="footer-bar">
+          <div class="copyright-text">
+            <p>Copyright 2021 - All Rights Reserved</p>
+          </div>
+          <div class="payment-mode">
+            <img src="img/icons/paper_money.png" />
+            <img src="img/icons/visa.png" />
+            <img src="img/icons/mastercard.png" />
+          </div>
+        </div>
+        <!-- Footer Bar -->
+      </div>
+    </footer>
+    <!-- Footer Area -->
+  </body>
+</html>
